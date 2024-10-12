@@ -43,34 +43,63 @@ El proyecto consiste en desarrollar un sistema de inventario para una tienda, en
 #### Pseudocódigo: 
 
 Inicio
+
     Mostrar Menú Principal
+
     Repetir hasta que el usuario elija la opción 6:
+
         1. Agregar Producto
+
             Solicitar nombre, cantidad, precio del producto
+
             guardar el producto en el diccionario
+
         2. Eliminar Producto
+
             Solicitar nombre del producto
-            Si el producto existe en el diccionario:
+
+            Si el producto existe en el diccionario: 
+
                 Eliminar el producto del diccionario
+
             Si no:
+
                 Mostrar mensaje "Producto no encontrado"
+
         3. Actualizar Producto
+
             Solicitar nombre del producto
+
             Si el producto existe en el diccionario:
+
                 Solicitar si desea actualizar cantidad o precio
+
                 Actualizar la información correspondiente
+
             Si no:
+
                 Mostrar mensaje "Producto no encontrado"
+
         4. Consultar Inventario
+
             Mostrar todos los productos y su información (nombre, cantidad, precio)
+
         5. Buscar Producto
+
             Solicitar nombre del producto
+
             Si el producto existe en el diccionario:
+
                 Mostrar detalles del producto
+
             Si no:
+
                 Mostrar mensaje "Producto no encontrado"
+
         6. Salir
+
             Finalizar el programa
+            
 Fin
 
 
