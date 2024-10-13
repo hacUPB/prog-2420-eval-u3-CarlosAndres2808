@@ -20,9 +20,9 @@ El proyecto consiste en desarrollar un sistema de inventario para una tienda, en
 
 	•   Agregar nuevos productos al inventario.
 
-	•   Eliminar productos existentes del inventario.
+	•	Modificar información de un producto, como la cantidad y el precio.
 
-	•	Actualizar información de un producto, como la cantidad y el precio.
+	•   Eliminar productos existentes del inventario.
 
 	•	Consultar el inventario para ver los productos disponibles.
 
