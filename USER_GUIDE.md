@@ -29,15 +29,10 @@ Este programa presenta un menú que permite al usuario realizar distintas accion
 Opciones del menú:
 
     1. Agregar producto: Permite agregar un nuevo producto al inventario.
-
     2. Modificar producto: Permite modificar la información de un producto existente en el inventario.
-
     3. Eliminar producto: Elimina un producto del inventario.
-
     4. Consultar Inventario: Muestra todos los productos del inventario.
-
     5. Buscar producto: Busca un producto específico por su código.
-
     0. Salir: Finaliza el programa.
 
 ### Instrucciones de uso
@@ -45,13 +40,9 @@ Opciones del menú:
 Al iniciar el programa, se mostrará un menú donde el usuario puede seleccionar la opción que desea realizar. A continuación se detalla cada opción:
 
     1. Agregar producto: Al seleccionar esta opción, el programa solicitará el nombre, código, cantidad y precio del nuevo producto para agregarlo al inventario.
-
     2. Modificar producto: El usuario debe ingresar el código del producto que desea modificar. Si el producto existe, se podrán cambiar su nombre, cantidad y precio.
-
     3. Eliminar producto: El usuario debe ingresar el código del producto que desea eliminar. Si el producto existe, será eliminado del inventario.
-
     4. Consultar Inventario: Muestra todos los productos en el inventario con su respectiva información.
-
     5. Buscar producto: Permite buscar un producto específico por su código. Si el producto se encuentra, se muestra su información.
 
 ### Comandos
@@ -78,7 +69,6 @@ A continuación, se presentan algunos ejemplos sobre el uso del programa:
         Cantidad: 20
         Precio: 3.500
     3. El programa añadirá el producto al inventario y mostrará el siguente mensaje:
-
         "Producto agregado correctamente al inventario."
 
 ### Ejemplo 2: Modificar un producto
@@ -96,14 +86,12 @@ A continuación, se presentan algunos ejemplos sobre el uso del programa:
     1. Seleccionar la opción "3" en el menú.
     2. Ingresar el código del producto a eliminar: 001.
     3. El programa eliminará el producto del inventario y mostrará el mensaje:
-
         Producto eliminado: {'nombre': 'Gaseosa grande', 'codigo': '001', 'cantidad': 30, 'precio': 8.000}
 
 ### Ejemplo 4: Consultar el inventario
 
     1. Seleccionar la opción "4" en el menú.
     2. El programa mostrará todos los productos en el inventario en formato de diccionario, por ejemplo:
-
         {'001': {'nombre': 'Gaseosa', 'codigo': '001', 'cantidad': 20, 'precio': 3.500}}
 
 ### Ejemplo 5: Buscar un producto
@@ -111,7 +99,6 @@ A continuación, se presentan algunos ejemplos sobre el uso del programa:
     1. Seleccionar la opción "5" en el menú.
     2. Ingresar el código del producto: 001.
     3. El programa mostrará la información del producto:
-
         {'nombre': 'Gaseosa', 'codigo': '001', 'cantidad': 20, 'precio': 3.500}
 
 ### Salida
