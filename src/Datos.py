@@ -1,17 +1,21 @@
+# Función para agregar un producto al inventario
 def agregar_producto(inventario):
+    # Solicitar información al usuario sobre el producto
     nombre = input("Nombre del producto: ")
     codigo = input("Código del producto: ")
     cantidad = int(input("Cantidad: "))
     precio = float(input("Precio: "))
+    # Diccionario para agregar el nuevo producto    
     nuevo_producto = {
         "nombre": nombre,
         "codigo": codigo, 
         "cantidad": cantidad, 
         "precio": precio
     }
+    # Agregar un producto al inventario utilizando el código como clave
     inventario[codigo] = nuevo_producto
     print("Producto agregado correctamente.")
-
+# Función para modificar un producto
 def modificar_producto(inventario, codigo):
     producto = buscar_producto(inventario, codigo)
 
@@ -26,7 +30,7 @@ def modificar_producto(inventario, codigo):
 
     # Actualizar producto en el inventario
     inventario[codigo] = producto
-
+# Función para eliminar un producto del inventario
 def eliminar_producto(inventario, codigo):
     producto = buscar_producto(inventario, codigo)
 
@@ -36,10 +40,10 @@ def eliminar_producto(inventario, codigo):
 
     del inventario[codigo]
     print("Producto eliminado: ", producto)
-
+# Función para consultar un producto del inventario
 def consultar_inventario(inventario):
     print(inventario)
-
+# Función para buscar un producto del inventario
 def buscar_producto(inventario, codigo):
     producto = inventario.get(codigo, None)
     if producto is not None:
@@ -48,7 +52,7 @@ def buscar_producto(inventario, codigo):
         print(f"El producto con el código {codigo} no existe")
     return producto
 
-
+# Función principal que gestiona el menú y las operaciones del inventario
 def main():
 
     # Inicializamos el inventario
@@ -63,9 +67,10 @@ def main():
         print("4. Consultar Inventario")
         print("5. Buscar producto")
         print("0. Salir")
-
+        
+        # Solicita al usuario que seleccione una opción
         opcion = input("Selecciona una opción: ")
-
+        # Dependiendo de la opción seleccionada, se llama a la función correspondiente
         if opcion == "1":
             agregar_producto(inventario)
         if opcion == "2":
@@ -79,6 +84,7 @@ def main():
         elif opcion == "5":
             codigo = input("Ingrese el código del producto: ")
             buscar_producto(inventario, codigo)
+        # Si elige 0, se termina el ciclo y el programa finaliza    
         elif opcion == "0":
             break
 
